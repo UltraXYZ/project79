@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>Pizzeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Pizzeria</a>
+        <div class="topnav-right">
+            <a href="#viewmenu">View Menu</a>
+            <a href="#additems">Add Items</a>
+        </div>
+    </div>
+
+    <div class="row" id="viewmenu">
+        <div class="img_div">
+            <img class="img-responsive" src="images/pizza.png">
+        </div>
+        <div class="menu_div">
+            <button id="menu_list" onclick="getmenu()">Show Menu</button>
+            <div id="display_menu"></div>
+        </div>
+    </div>
+
+    <div class="newRow" id="additems">
+        <div class="block1">
+            <input id="add_item" placeholder="Type here to add a pizza">
+            <button id="add_items" onclick="add_item()">Add a Pizza</button>
+        </div>
+        <div class="block3">
+            <div id="display_addedmenu">
+                <ol class="menulist">
+                    <li class="cards" id="list_of_pizzas">
+                        <div class="card">
+                            <center>
+                                <img src="images/pizzaImg.png">
+                                <p> Cheese Pizza </p>
+                            </center>
+                        </div>
+                        <div class="card">
+                            <center>
+                                <img src="images/pizzaImg.png">
+                                <p> Hawaiian Pizza </p>
+                            </center>
+                        </div>
+                        <div class="card">
+                            <center>
+                                <img src="images/pizzaImg.png">
+                                <p> New York Style Pizza </p>
+                            </center>
+                        </div>
+                        <div class="card">
+                            <center>
+                                <img src="images/pizzaImg.png">
+                                <p> Pepperoni Pizza </p>
+                            </center>
+                        </div>
+                        <div class="card">
+                            <center>
+                                <img src="images/pizzaImg.png">
+                                <p> Philly Cheese Steak Pizza </p>
+                            </center>
+                        </div>
+                        <div class="card">
+                            <center>
+                                <img src="images/pizzaImg.png">
+                                <p> Thick Crusted Pizza </p>
+                            </center>
+                        </div>
+                        <div class="card">
+                            <center>
+                                <img src="images/pizzaImg.png">
+                                <p> Veg Margherita Pizza </p>
+                            </center>
+                        </div>
+                        <div class="card">
+                            <center>
+                                <img src="images/pizzaImg.png">
+                                <p> Vegetable Pizza </p>
+                            </center>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <img class="img-responsive" src="images/topping.png">
+    </div>
+
+
+</body>
+
+</html>
